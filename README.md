@@ -10,7 +10,7 @@ For many years, I have been building a static website by hand for my book group.
 
 I knew the best solution would be to use an API to generate the links under the control of a static site generator, but I wasn't aware of any SDK toolsets that facilitated the use of the <a href="http://docs.aws.amazon.com/AWSECommerceService/latest/DG/ProgrammingGuide.html">Product Advertising API</a>.  Since I had very carefully <i>not searched</i> for any such utilities, this lack of awareness was mostly cluelessness on my part. :(
 
-I initially wanted to use <a href="https://gohugo.io/">Hugo</a>, but I stumbled upon a gem that took care of the Amazon Affiliate lookups, so I realized that Ruby was the way to go.
+I initially wanted to use <a href="https://gohugo.io/">Hugo</a>, but I stumbled upon a gem that took care of the Amazon Affiliate lookups, so I realized that Ruby was the way to go.  So here are the tools I chose: 
 
 <ul>
 <li><a href="http://jekyllrb.com/">Jekyll</a> - A static site generator</li>
@@ -20,7 +20,16 @@ I initially wanted to use <a href="https://gohugo.io/">Hugo</a>, but I stumbled 
 
 ## Usage
 
-Once you have this toolset installed and working, it's just a matter of building pages in Markdown or HTML that contain links to your selections, i.e. 
+Your first step is to get an [Amazon Affiliates account](https://affiliate-program.amazon.com/).  Once you have done this, you will need to create an AWS Account associated with your affiliates account to use the Product Advertising API.
+The steps for this are shown [in the documentation](http://docs.aws.amazon.com/AWSECommerceService/latest/DG/CHAP_GettingStarted.html). 
+
+Next, install Jekyll and find a template you like.  I used Hyde because it had sidebar navigation, which is useful if you have a lot of content pages, but there are many choices.  Try setting up some pages and adding some content to get a feel for using Jekyll.
+
+Then do a `gem install jekyll-amazon` to get the Jekyll tag generator.
+See the documentation on that gem for the environment variables you need 
+to set in order to use the API. 
+
+Once you have the tools installed and working, it's just a matter of building pages in Markdown or HTML that contain links to your selections, i.e. 
 
 <pre>
 {&#37; amazon &lt;ASIN&gt; detail &#37;}
@@ -32,13 +41,16 @@ To build the site during development, use the command
 
 `$ jekyll build`
 
-which will put the output in _site. 
+which will put the output in the `_site` directory. 
 
 To build for production, use the command 
 
 `$ jekyll build --config=_config_prod.yml`
 
 which will build the output in the directory specified in the `destination` variable in `_config_prod.yml`.
+
+The build also produces a `sitemap.xml` file, which may be used with Google 
+Webmaster tools. 
 
 ## Author
 
