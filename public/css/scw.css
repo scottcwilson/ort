@@ -1,0 +1,24 @@
+/* Temp stuff for detail */
+.jk-amazon-info-publisher, .jk-amazon-info-date, .jk-amazon-info-salesrank, .jk-amazon-info-description {display:none;} 
+
+.book {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border-bottom: solid 1px black; 
+}
+
+.regular-rule {
+  border-bottom: solid 1px black; 
+}
+
+.book-date {
+  font-weight: bold;
+}
+
+.jk-amazon-info-title {
+  font-style: italic; 
+}
+
+.sidebar-about {
+  margin-top: 5px;
+}

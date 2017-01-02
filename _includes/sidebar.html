@@ -1,0 +1,53 @@
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+<!--
+      <h1>
+        <a href="{{ site.baseurl }}">
+          {{ site.title }}
+        </a>
+      </h1>
+-->
+      <h1>
+          {{ site.title }}
+      </h1>
+      <p class="lead">{{ site.description }}</p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">Home</a>
+
+      {% comment %}
+        The code below dynamically generates a sidebar nav of pages with
+        `layout: page` in the front-matter. See readme for usage.
+      {% endcomment %}
+
+      {% assign pages_list = site.pages %}
+      {% assign count = 0 %}
+      {% assign MAX_NAV_PAGES = 3 %}
+      {% for node in pages_list reversed %}
+        {% if node.title != null %}
+          {% if node.layout == "page" %}
+            <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ site.url}}{{ node.url }}">{{ node.title }}</a>
+            {% assign count = count | plus: 1 %}
+            {% if count >= MAX_NAV_PAGES %}
+               {% break %}
+            {% endif %}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+
+      <a class="sidebar-nav-item" href="{{ site.url}}/years/index.html">All Years</a>
+      <a class="sidebar-nav-item" href="{{ site.url}}/complete/index.html">All Selections</a>
+      <a class="sidebar-nav-item" href="{{ site.url}}/about/index.html">About Us</a>
+      <a class="sidebar-nav-item" href="http://thatsoftwareguy.com/old-ort/">Old Site</a>
+<!--
+      <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a>
+-->
+    </nav>
+
+<!--
+    <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
+-->
+  </div>
+</div>

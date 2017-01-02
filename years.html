@@ -1,0 +1,15 @@
+---
+layout: page_nonav
+title: Complete List of Years
+---
+
+<ul>
+      {% assign pages_list = site.pages %}
+      {% for node in pages_list reversed %}
+        {% if node.title != null %}
+          {% if node.layout == "page" %}
+            <li><a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ site.url}}{{ node.url }}">{{ node.title }}</a></li>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+</ul>
