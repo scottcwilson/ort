@@ -55,7 +55,16 @@ Open sourced under the [MIT license](LICENSE.md).
 Here's the Amazon Affiliate link for <i>The Ruby Programming Language</i>, produced by the Amazon Affiliate product search tool in January 2017.   
 
 ```
-<a target="_blank"  href="https://www.amazon.com/gp/product/0596516177/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0596516177&amp;linkCode=as2&amp;tag=thatsoftwareg-20&amp;linkId=7dd3b7d895b70055f8c1aa8213403a63"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&amp;MarketPlace=US&amp;ASIN=0596516177&amp;ServiceVersion=20070822&amp;ID=AsinImage&amp;WS=1&amp;Format=_SL250_&amp;tag=thatsoftwareg-20" ></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=thatsoftwareg-20&amp;l=am2&amp;o=1&amp;a=0596516177" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+<a target="_blank"  href="https://www.amazon.com/gp/product/0596516177/ref=
+as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0596516177
+&amp;linkCode=as2&amp;tag=thatsoftwareg-20&amp;
+linkId=7dd3b7d895b70055f8c1aa8213403a63">
+<img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8
+&amp;MarketPlace=US&amp;ASIN=0596516177&amp;ServiceVersion=20070822
+&amp;ID=AsinImage&amp;WS=1&amp;Format=_SL250_&amp;tag=thatsoftwareg-20" ></a>
+<img src="//ir-na.amazon-adsystem.com/e/ir?t=thatsoftwareg-20&amp;l=am2
+&amp;o=1&amp;a=0596516177" width="1" height="1" border="0" alt="" 
+style="border:none !important; margin:0px !important;" />
 ```
 
 There are several reasons why this is not valid XHTML: 
@@ -67,7 +76,15 @@ There are several reasons why this is not valid XHTML:
 But there's a bigger danger: the path for the image used in this link is subject to change by Amazon.  Here's an Affiliate link from 2013 that worked for several years, but then just stopped working.  (The issues noted above have been fixed in this code block.)
 
 ```
-<a href="http://www.amazon.com/gp/product/B0052HKL4G/ref=as_li_tf_il?ie=UTF8&amp;tag=thatsoftwareg-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B0052HKL4G"><img border="0" src="http://ws.assoc-amazon.com/widgets/q?_encoding=UTF8&amp;Format=_SL160_&amp;ASIN=B0052HKL4G&amp;MarketPlace=US&amp;ID=AsinImage&amp;WS=1&amp;tag=thatsoftwareg-20&amp;ServiceVersion=20070822" alt="" /></a><img src="http://www.assoc-amazon.com/e/ir?t=thatsoftwareg-20&amp;l=as2&amp;o=1&amp;a=B0052HKL4G" width="1" height="1" border="0" style="border:none !important; margin:0px !important;" alt="Nemesis" />
+<a href="http://www.amazon.com/gp/product/B0052HKL4G/ref=as_li_tf_il?ie=UTF8
+&amp;tag=thatsoftwareg-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325
+&amp;creativeASIN=B0052HKL4G">
+<img border="0" src="http://ws.assoc-amazon.com/widgets/q?_encoding=UTF8
+&amp;Format=_SL160_&amp;ASIN=B0052HKL4G&amp;MarketPlace=US&amp;ID=AsinImage
+&amp;WS=1&amp;tag=thatsoftwareg-20&amp;ServiceVersion=20070822" alt="" /></a>
+<img src="http://www.assoc-amazon.com/e/ir?t=thatsoftwareg-20&amp;l=as2
+&amp;o=1&amp;a=B0052HKL4G" width="1" height="1" border="0" style="border:none 
+!important; margin:0px !important;" alt="Nemesis" />
 ```
 
 API-generated links will get the most current image paths from Amazon, and are thus safer.
