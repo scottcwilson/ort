@@ -56,20 +56,20 @@ Here's the Amazon Affiliate link for <i>The Ruby Programming Language</i>, produ
 
 ```
 <a target="_blank"  href="https://www.amazon.com/gp/product/0596516177/ref=
-as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0596516177
-&amp;linkCode=as2&amp;tag=thatsoftwareg-20&amp;
+as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0596516177
+&linkCode=as2&tag=thatsoftwareg-20&
 linkId=7dd3b7d895b70055f8c1aa8213403a63">
 <img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8
-&amp;MarketPlace=US&amp;ASIN=0596516177&amp;ServiceVersion=20070822
-&amp;ID=AsinImage&amp;WS=1&amp;Format=_SL250_&amp;tag=thatsoftwareg-20" ></a>
-<img src="//ir-na.amazon-adsystem.com/e/ir?t=thatsoftwareg-20&amp;l=am2
-&amp;o=1&amp;a=0596516177" width="1" height="1" border="0" alt="" 
+&MarketPlace=US&ASIN=0596516177&ServiceVersion=20070822
+&ID=AsinImage&WS=1&Format=_SL250_&tag=thatsoftwareg-20" ></a>
+<img src="//ir-na.amazon-adsystem.com/e/ir?t=thatsoftwareg-20&l=am2
+&o=1&a=0596516177" width="1" height="1" border="0" alt=""
 style="border:none !important; margin:0px !important;" />
 ```
 
 There are several reasons why this is not valid XHTML: 
 
-* The `&#38;` character should be coded as `&#38;amp;`
+* The `&` character should be coded as `&amp;`
 * There is no `alt` tag for the image
 * The first `img` tag is not closed
 
