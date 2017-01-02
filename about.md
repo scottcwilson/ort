@@ -19,6 +19,6 @@ group.  Sorry, we are not currently looking for new members.
 Thanks for reading!
 
 <h2>Building This Site</h2>
-The source code for my <a href="https://github.com/scottcwilson/ort">book group website</a> is available on Github.  You may use it as a template for building your own book group website. 
+The source code for this site is available on Github.  You may use it as a template for <a href="https://github.com/scottcwilson/ort">building your book group website</a>.
 
-This website was built by <a href="http://www.thatsoftwareguy.com/">That Software Guy</a>, using <a href="http://jekyllrb.com/">Jekyll</a>. 
+This website was built by <a href="http://www.thatsoftwareguy.com/">That Software Guy</a>, using <a href="http://jekyllrb.com/">Jekyll</a>. &copy; That Software Guy, {{ site.time | date: '%Y' }}. All rights reserved.
