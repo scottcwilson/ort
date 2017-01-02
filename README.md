@@ -51,6 +51,8 @@ which will build the output in the directory specified in the `destination` vari
 
 Open sourced under the [MIT license](LICENSE.md).
 
+<div id="history"></div>
+
 ## History
 Here's the Amazon Affiliate link for <i>The Ruby Programming Language</i>, produced by the Amazon Affiliate product search tool in January 2017.   
 
