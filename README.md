@@ -35,6 +35,8 @@ Once you have the tools installed and working, it's just a matter of building pa
 {&#37; amazon &lt;ASIN&gt; detail &#37;}
 </pre>
 
+(Note that I used the tag `short_detail` because I wanted less information, with a different layout.)
+
 Pages with layout set to `page` will appear in the navbar.  I limited the number of pages shown in the navbar to make the site easier to use on mobile, but you can change this by updating `_includes/sidebar.html` and setting `MAX_NAV_PAGES` to some large value.
 
 To build the site during development, use the command 

@@ -1,10 +1,24 @@
 /* Temp stuff for detail */
-.jk-amazon-info-publisher, .jk-amazon-info-date, .jk-amazon-info-salesrank, .jk-amazon-info-description {display:none;} 
-
 .book {
   margin-top: 5px;
   margin-bottom: 10px;
+  margin-right: 10px; 
   border-bottom: solid 1px black; 
+}
+
+
+/* The whole block */
+.jk-amazon-item{
+}
+
+/* Image */
+.jk-amazon-image {
+   float: left; 
+   display: inline-block; 
+}
+
+/* Title and Author */
+.jk-amazon-info {
 }
 
 .regular-rule {
@@ -17,8 +31,20 @@
 
 .jk-amazon-info-title {
   font-style: italic; 
+  margin-left: 15px;
+}
+.jk-amazon-info-author {
+  margin-left: 15px;
 }
 
 .sidebar-about {
   margin-top: 5px;
+}
+@media (min-width: 48rem) {
+  #footer {
+    margin-left : 19rem;
+  }
+}
+.content {
+  padding-top: 1rem; 
 }
