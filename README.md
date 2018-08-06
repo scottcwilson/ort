@@ -21,12 +21,12 @@ I initially wanted to use <a href="https://gohugo.io/">Hugo</a>, but I stumbled 
 ## Usage
 
 Your first step is to get an [Amazon Affiliates account](https://affiliate-program.amazon.com/).  Once you have done this, you will need to create an AWS Account associated with your affiliates account to use the Product Advertising API.
-The steps for this are shown [in the documentation](http://docs.aws.amazon.com/AWSECommerceService/latest/DG/CHAP_GettingStarted.html). 
+The steps for this are shown [in the AWS documentation](http://docs.aws.amazon.com/AWSECommerceService/latest/DG/CHAP_GettingStarted.html). 
 
 Next, install Jekyll and find a template you like.  I used Hyde because it had sidebar navigation, which is useful if you have a lot of content pages, but there are many choices.  Try setting up some pages and adding some content to get a feel for using Jekyll.
 
 Then do a `gem install jekyll-amazon` to get the Jekyll tag generator.
-See the documentation on that gem for the environment variables you need 
+See the [documentation on that gem](https://www.rubydoc.info/gems/jekyll-amazon) for the environment variables you need 
 to set in order to use the API. 
 
 Once you have the tools installed and working, it's just a matter of building pages in Markdown or HTML that contain links to your selections, i.e. 
