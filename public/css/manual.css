@@ -1,0 +1,6 @@
+/* Image */
+div.jk-amazon-item > a > img {
+   float: left; 
+   display: inline-block; 
+}
+
